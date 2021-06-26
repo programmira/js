@@ -1,44 +1,21 @@
 "use strict";
 
-console.log('arr'+'- object');
-console.log('4'+'- object');
-console.log(4 + 5);
+if (1) {
+    console.log("Ok!");
+} else {
+    console.log("Error");
+}
 
 
-let incr = 10,
-    decr = 10;
+const num = 50;
 
-incr++;
-decr--;
+if (num < 49) {
+    console.log("Error");
+} else if (num > 100) {
+    console.log("Много");
+} else {
+    console.log("Ok!")
+}
 
-console.log(incr);
-console.log(decr);
+(num === 50) ? console.log("Ok!") : console.log("Error");
 
-console.log(13%2);
-
-console.log(2*8 == 16);
-
-console.log(2*8 === '16');
-
-const isChecked = false,
-      isClosed = false;
-
-const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", "");
-
-const personalMovieDB = {
-    count: numberOfFilms,
-    movies: {},
-    actors: {},
-    genres: [],
-    privat: false
-};
-
-const a = prompt("Один из последних просмотренных фильмов?", ""),
-    b = prompt("На сколько оцените его?", ""),
-    c = prompt("Один из последних просмотренных фильмов?", ""),
-    d = prompt("На сколько оцените его?", "");
-
-personalMovieDB.movies[a] = b;
-personalMovieDB.movies[c] = d;
-
-console.log(personalMovieDB);
