@@ -1,41 +1,42 @@
 "use strict";
 
-let num = 20;
+let numberOfFilms;
 
-// function showFirstMessage (text, arg, num, fwef) {
-//     console.log(text);
-//     let num = 10;
-//     console.log(num);
-// }
+function start() {
+    numberOfFilms = +prompt("Сколько фильмов Вы уже посмотрели?", "");
+    while(numberOfFilms == "" || numberOfFilms == null || numberOfFilms == isNaN(numberOfFilms)) {
+        numberOfFilms = +prompt("Сколько фильмов Вы уже посмотрели?", "");
+    }
 
-// showFirstMessage ("Hello World");
-// console.log(num);
+}
+start();
 
-
-// function calc(a, b) {
-//     return (a + b);
-// }
-
-// console.log(calc(4, 5));
-// console.log(calc(2, 3));
-// console.log(calc(10, 6));
-
-
-function ret() {
-    let num = 40;
-    return num;
+for(let i = 0; i < 2; i++) {
+    const a = +prompt("Один из последних просмотренных фильмов?", ""),
+    const b = +prompt("На сколько оцениваете его?", ""),
+    if (a !== null && b !== null && a !== "" && b !== "" && a.length < 50) {
+        console.log("")
+    }
 }
 
-const anotherNum = ret();
-console.log(anotherNum);
-
-const logger = function () {
-    console.log("Hello!");
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
 };
 
-logger ();
+function showMyDB() {
+    if(personalMovieDB.privat = false) {
+        console.log();
+    }
+}
 
-const calc = (8, 9) => {
-    console.log('1');
-    return 8 + 9;
-};
+const numberClients = +prompt("Сколько участников конкурса?", "");
+const clients = [];
+for(let i = 0; i < numberClients; i++) {
+    clients[i] = prompt("Назовите имя участника", "");
+}
+let random = Math.floor(Math.random()*numberClients);
+ alert(`Победил ${random}`)
