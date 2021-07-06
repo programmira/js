@@ -1,42 +1,41 @@
 "use strict";
 
-let numberOfFilms;
+// Задача 13
+// let num = '12345';
+// let a = num[0];
+// let b = num[1];
+// let c = num[2];
+// let d = num[3];
+// let f = num[4];
+// alert(a * b * c * d * f);
 
-function start() {
-    numberOfFilms = +prompt("Сколько фильмов Вы уже посмотрели?", "");
-    while(numberOfFilms == "" || numberOfFilms == null || numberOfFilms == isNaN(numberOfFilms)) {
-        numberOfFilms = +prompt("Сколько фильмов Вы уже посмотрели?", "");
-    }
+// Задача 14
+// alert(60*60);
+// alert(60*60*24);
+// alert(60*60*24*30);
 
-}
-start();
+// Задача 15
+// let hour ='15';
+// let minute = '05';
+// let sec = '55';
+// alert(`Сейчас ${hour}:${minute}:${sec}`);
 
-for(let i = 0; i < 2; i++) {
-    const a = +prompt("Один из последних просмотренных фильмов?", ""),
-    const b = +prompt("На сколько оцениваете его?", ""),
-    if (a !== null && b !== null && a !== "" && b !== "" && a.length < 50) {
-        console.log("")
-    }
-}
+// Задача 16
+// let a = 6;
+// let b = Math.pow(a, 2);
+// alert(b);
 
-const personalMovieDB = {
-    count: numberOfFilms,
-    movies: {},
-    actors: {},
-    genres: [],
-    privat: false
-};
+// Задача 17
+// var num = 47;
+// num += 7;
+// num -= 18;
+// num *= 10;
+// num /= 15;
+// alert(num);
 
-function showMyDB() {
-    if(personalMovieDB.privat = false) {
-        console.log();
-    }
-}
-
-const numberClients = +prompt("Сколько участников конкурса?", "");
-const clients = [];
-for(let i = 0; i < numberClients; i++) {
-    clients[i] = prompt("Назовите имя участника", "");
-}
-let random = Math.floor(Math.random()*numberClients);
- alert(`Победил ${random}`)
+// Задача 18
+var num = 10;
+num++;
+num++;
+num--;
+alert(num);
