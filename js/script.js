@@ -357,26 +357,263 @@
 // }
 // writeYourGenres();
 
-function first() {
-    setTimeout(function() {
-            console.log(1);
-    }, 500);
+// function first() {
+//     setTimeout(function() {
+//             console.log(1);
+//     }, 500);
+// }
+
+// function second() {
+//     console.log(2);
+// }
+
+// first();
+// second();
+
+// function learnJS(lang, callback) {
+//     console.log(`Я учу: ${lang}`);
+//     callback();
+// }
+
+// function done() {
+//     console.log('Я прошел этот урок! Уррраа!');
+// }
+
+// learnJS('Python', done);
+
+// Задачи на циклы while, for в JavaScript
+
+// Примеры решения задач
+
+// Задача № 1
+
+// var i = 1;
+// while (i <= 50) {
+// 	document.write(i + '<br>');
+// 	i++;
+// }
+
+// Задача № 2
+
+// let num = [1, 2, 3, 4, 5];
+// for(let i = 0; i < num.length; i++) {
+//     document.write(num[i] + '<br>');
+// }
+
+
+// Задача № 3
+// let result = 1;
+// let arr = [2, 3, 4, 5];
+// for(let i = 0; i < arr.length; i++) {
+//     result = result * arr[i];
+//     console.log(result);
+// }
+
+// Задача . Цикл for-in
+
+// let obj = {
+//     'Минск': 'Беларусь',
+//     'Москва': 'Россия',
+//     'Киев': 'Украина'
+// };
+
+// for (let key in obj) {
+//    document.write(`${key} - это ${obj[key]} <br>`);
+// }
+
+// Циклы while и for
+// Циклы while
+// Задача №1
+
+// let num = 1;
+// while(num < 101) {
+//     document.write(num + '<br>');
+//     num++;
+// }
+
+// Задача №2
+// let num = 11;
+// while(num < 34) {
+//     document.write(num + '<br>');
+//     num++;
+// }
+
+// Задача №3
+
+// let num = 0;
+// while(num < 101) {
+//     if(Number.isInteger(num / 2)) {
+//         document.write(num + '<br>');
+//     }
+//     num++;
+// }
+
+// let num = 0;
+// while(num < 101) {
+//     if(num % 2 == 0) {
+//         document.write(num + '<br>');
+//     }
+//     num++;
+// }
+
+// Задача №4
+// let result = 0;
+// let num = 1;
+// while(num < 101) {
+//     result = result + num;
+//     console.log(result);
+//     num++;
+// }
+
+// Циклы for
+
+// Задача №1
+// for(let i = 1; i < 101; i++){
+//     document.write(i + '<br>');
+// }
+
+// Задача №2
+
+// for(let i = 11; i < 34; i++) {
+//     document.write(i + '<br>');
+// }
+
+// Задача №3
+// for(let i = 0; i < 101; i++) {
+//     if(i % 2 == 0) {
+//         document.write(i + '<br>');
+//     }
+// }
+
+// Задача №4
+// let result = 0;
+// for(let i = 1; i < 100; i++) {
+//     result = result + i;
+//     document.write(result + '<br>');
+// }
+
+
+// Работа с for для массивов
+
+// Задача №5
+// let num = [1, 2, 3, 4, 5];
+// for(let i = 0; i < num.length; i++) {
+//     document.write(num[i] + '<br>');
+// }
+
+// Задача №6
+// let result = 0;
+// let arr = [1, 2, 3, 4, 5];
+// for(let i = 0; i < arr.length; i++) {
+//     result = result + arr[i];
+// }
+// console.log(result);
+
+// Работа с for-in
+
+// Задача №7
+// var obj = {green: 'зеленый', red: 'красный', blue: 'голубой'}
+// for(let key in obj) {
+//     document.write(key + ': ' + obj[key] + '<br>');
+// }
+
+// Задача №8
+// var obj = {Коля: '200',
+//  Вася: '300', 
+//  Петя: '400'
+// };
+
+// for(let key in obj) {
+//     document.write(key + ' - ' + ' зарплата ' + obj[key] + ' долларов.' + '<br>');
+// }
+
+// Задачи
+
+// Задача №9
+// let arr = [2, 5, 9, 15, 0, 4];
+// for(let i = 0; i < arr.length; i++) {
+//     if(arr[i] > 3 && arr[i] < 11) {
+//         document.write(arr[i] + '<br>');
+//     }
+// }
+
+// Задача №10
+// let result = 0;
+// let arr = [2, 5, -9, -15, 0, 4];
+// for(let i = 0; i < arr.length; i++) {
+//     if(arr[i] > 0) {
+//         result = result + arr[i];
+//     }
+// }
+// document.write(result);
+
+
+// Задача №11
+// let arr = [1, 2, 5, 9, 4, 13, 4, 10];
+// for(let i = 0; i < arr.length; i++) {
+//     if(arr[i] === 4) {
+//         alert("Есть!");
+//     }
+// }
+
+// Задача №12
+// let arr = [10, 20, 30, 50, 235, 3000];
+// for(let i = 0; i < arr.length; i++) {
+//     let num = arr[i].toString()[0];
+//     if(num === '1' || num === '2' || num === '5') {
+//         document.write(arr[i] + '<br>');
+//     }
+// }
+
+
+// Задача №13
+// var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// for (var i = 0; i < arr.length; i++){
+//      document.write('-' + arr[i]);
+// }
+// document.write('-');
+
+// Задача №14
+
+// let arr = ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье'];
+// for(let i = 0; i < arr.length; i++) {
+//     if(arr[i] === 'Суббота' || arr[i] === 'Воскресенье') {
+//         document.write(arr[i].bold() + '<br>');
+//     } else {
+//         document.write(arr[i] + '<br>');
+//     }
+// }
+
+// Задача №15
+
+// let day = 'Пятница';
+// let arr = ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье'];
+// for(let i = 0; i < arr.length; i++) {
+//     if(day === arr[i]) {
+//         document.write(day.italics() + '<br>');
+//     } else {
+//         document.write(arr[i] + '<br>');
+//     }
+// }
+
+// Задача №16
+
+// let n = 1000;
+// while(n > 50){
+//     n = n / 2;
+//     if(n > 50) {
+//         console.log(n);;
+//     }
+// }
+let n = 1000;
+let prev = 0;
+let num = 0;
+while(n > 50){
+    prev = n;
+    n = n / 2;
+    num += 1;
 }
+console.log(n);
+console.log(num);
+  
 
-function second() {
-    console.log(2);
-}
-
-first();
-second();
-
-function learnJS(lang, callback) {
-    console.log(`Я учу: ${lang}`);
-    callback();
-}
-
-function done() {
-    console.log('Я прошел этот урок! Уррраа!');
-}
-
-learnJS('Python', done);
