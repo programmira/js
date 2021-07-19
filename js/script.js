@@ -605,15 +605,78 @@
 //         console.log(n);;
 //     }
 // }
-let n = 1000;
-let prev = 0;
-let num = 0;
-while(n > 50){
-    prev = n;
-    n = n / 2;
-    num += 1;
-}
-console.log(n);
-console.log(num);
+// let n = 1000;
+// let prev = 0;
+// let num = 0;
+// while(n > 50){
+//     prev = n;
+//     n = n / 2;
+//     num += 1;
+// }
+// console.log(n);
+// console.log(num);
+// console.log(prev);
   
+// Урок про объекты, деструктуризацию объектов
+// const obj = {
+//     name: 'test',
+//     width: 1024,
+//     height: 1024,
+//     colors: {
+//         border: 'black',
+//         bg: 'red'
+//     },
+//     makeTest: function() {
+//         console.log("Test");
+//     }
+// };
+// obj.makeTest();
+// console.log(Object.keys(obj).length);
 
+
+// const {bg, border} = obj.colors;
+// console.log(border);
+// delete obj.name;
+// console.log(obj);
+
+// let counter = 0;
+
+// for(let key in obj) {
+    // if(typeof(obj[key]) === 'object') {
+    //     for(let i in obj[key]) {
+    //         console.log(`Свойство ${key} имеет значение ${obj[key][i]}`);
+    //         counter++;
+    //     }
+    // }else {
+    //     console.log(`Свойство ${key} имеет значение ${obj[key]}`);
+        // counter++;
+    // }
+// }
+// console.log(counter);
+
+// Массивы и псевдомассивы
+
+// let arr = [1, 2, 3, 4, 5];
+// arr.pop();
+// arr.push(10);
+// arr.shift(3);
+// console.log(arr);
+
+// for(let i = 0; i < arr.length; i++) {
+//     console.log(arr[i]);
+// }
+
+// for(let value of arr) {
+//     console.log(value);
+// }
+
+// console.log(arr.length);
+
+// arr.forEach(function(item, i, arr) {
+//     console.log(`${i}: ${item} внутри массива ${arr}`);
+// });
+
+const str = prompt('', '');
+let products = str.split();
+products.sort();
+console.log(products.join('; '));
