@@ -676,7 +676,243 @@
 //     console.log(`${i}: ${item} внутри массива ${arr}`);
 // });
 
-const str = prompt('', '');
-let products = str.split();
-products.sort();
-console.log(products.join('; '));
+// const str = prompt('', '');
+// let products = str.split();
+// products.sort();
+// console.log(products.join('; '));
+
+// arr.sort(compareNum);
+// function compareNum(a, b) {
+//     return a - b;
+// }
+// console.log(arr);
+
+// Передача по ссылке или по значению, Spread оператор
+// let a = 8,
+//     b = a;
+
+// b = b + 2;
+
+// console.log(a);
+// console.log(b);
+
+// const numbers = {
+//     a: 1,
+//     b: 3,
+//     c: {
+//         x: 1,
+//         y: 2
+//     }
+// };
+
+// function copy(
+
+// ) = {
+
+// }
+
+// function showNumer(number) {
+//     let normilizedNumber = normalizeNumber(number);
+
+//     return normilizedNumber;
+// }
+
+// function normalizeNumber(number) {
+//     return `+38${number}`;
+// }
+
+// console.log(normalizeNumber('0987776655'));
+
+// function sumElements(array, exp) {
+//     for (let i = 0; i < array.length; i++) {
+//     array[i] = array[i] * exp;
+//     }
+//     return array;
+// }
+
+// let array1 = [1, 2,5,6,7,8,8];
+// let array2 = [1,2,3,4,5,6,7,8];
+// console.log(sumElements(array1, 4));
+// console.log(sumElements(array2, 7));
+
+// function sumElements(array, exp) {
+//     for (let i = 0; i < array.length; i++) {
+//         array[i] = array[i] * exp;
+//       }
+//       return array;
+// }
+
+
+// let sumElements1 = function(array, exp) {
+//     for (let i = 0; i < array.length; i++) {
+//         array[i] = array[i] * exp;
+//       }
+//       return array;
+// };
+
+
+// let sumElements2 = (array, exp) => {
+//    for (let i = 0; i < array.length; i++) {
+//      array[i] = array[i] * exp;
+//    }
+//    return array;
+// };
+
+// function showNumber(normalizeFunction, number) {
+//     return normalizeFunction(number);
+// }
+
+// let normalizeUkranianNumber = function (number) {
+//     return `+38${number}`;
+// }
+
+// let normalizeRussianNumber = function(number) {
+//     return `+7${number}`;
+// }
+
+// let user1 = {
+//     country: 'Russian',
+//     name: 'Vasia',
+//     number: '0976665544'
+// } 
+
+// let user2 = {
+//     country: 'Ukraine',
+//     name: 'Vasia',
+//     number: '0976665544'
+// } 
+
+// if(user1.country == 'Ukraine') {
+//     console.log(showNumber(normalizeUkranianNumber, user1.number));
+// } else {
+//    console.log(showNumber(normalizeRussianNumber, user1.number));
+// }
+
+
+// const checkConsistentOutput = (func, val) => {
+//     let firstTry = func(val);
+//     let secondTry = func(val);
+//     if (firstTry === secondTry) {
+//         return `Good. Result is ${firstTry}`;
+//     } else {
+//         return 'This function returned inconsistent results';
+//     }
+// };
+
+// let func = function(arg) {
+   
+// };
+
+// let result = checkConsistentOutput(func, 'Ira');
+
+// console.log(result);
+
+// let func = num => num + 2;
+
+// let func1 = (num) => { 
+//     return num + 2;
+// };
+
+// console.log(func());
+// const numbers = {
+//     x: 5,
+//     y: 4,
+//     d: {
+//         f: 5,
+//         c: 7
+//     }
+// };
+
+// function copy(mainObj) {
+//     let objCopy = {};
+//     for(let key in mainObj){
+//         objCopy[key] = mainObj[key];
+//     }
+//     return objCopy;
+// }
+
+// const newNumbers = copy(numbers);
+
+// newNumbers.y = 10;
+// newNumbers.d.f = 3;
+// console.log(newNumbers);
+// console.log(numbers);
+
+// const add = {
+//     b: 9,
+//     s: 0
+// }
+
+// // console.log(Object.assign(numbers, add));
+
+// const clone = Object.assign({}, add);
+// clone.b = 3;
+// console.log(clone);
+// console.log(add);
+
+// const oldArray = ['a', 'b', 'c'];
+// const newArray = oldArray.slice();
+// newArray[1] = 'd';
+// console.log(oldArray);
+// console.log(newArray);
+
+// const video = ['youtube', 'vimeo', 'rutube'],
+//     blog = ['wordpress', 'livejournal', 'blogger'],
+//     internet = [... video, ... blog, 'vk', 'instagram'];
+
+// console.log(internet);
+
+// function log(a, b, c) {
+//     console.log(a);
+//     console.log(b);
+//     console.log(c);
+// }
+
+// const num = [2, 4, 7];
+// log(...num);
+
+// const newArr = ['a', 'b', 'c'];
+// const newerArr = [...newArr, 'gh'];
+// console.log(newerArr);
+
+// const g = {
+//     x: 9,
+//     y: 6,
+//     c: {
+//         v: 1,
+//         b: 8
+//     }
+// };
+
+// const n = {...g};
+// n.x = 3;
+// console.log(n);
+// console.log(g);
+
+
+// Объектно-оринтированное программирование _ урок 23
+
+// let str = 'some';
+// let strObj = new String(str);
+// console.log(typeof (str));
+// console.log(typeof (strObj));
+
+// const soldier = {
+//     health: 500,
+//     armor: 100,
+//     sayHello: function() {
+//         console.log("Hello");
+//     }
+// };
+
+// // console.log(soldier);
+// let john = Object.create(soldier);
+//  john = {
+//     armor: 250,
+//     font: 350
+// };
+// Object.setPrototypeOf(soldier, john);
+
+// john.__proto__ = soldier;
+// console.log(john.sayHello);
+
