@@ -916,3 +916,80 @@
 // john.__proto__ = soldier;
 // console.log(john.sayHello);
 
+// Урок 24 - Практика, ч. 4, используем объекты
+
+const personalMovieDB = {
+    count: 0,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false,
+    start: function() {
+        personalMovieDB.count = prompt("Сколько фильмов Вы уже просмотрели?", "");
+    
+        while (personalMovieDB.count == "" || personalMovieDB.count == null || isNaN(personalMovieDB.count)) {
+            personalMovieDB.count = prompt("Сколько фильмов Вы уже просмотрели?", "");
+        }
+    },
+    rememberMyFilms: function() {
+        for (let i = 0; i < 2; i++) {
+            const filmName = prompt("Один из последних просмотренных фильмов?", ""),
+                  filmRate = prompt("На сколько оцените его?", "");
+        
+            if (filmName != "" && filmRate != "" && filmName != null && filmRate != null && filmName.length < 50) {
+                console.log("done");
+            } else {   
+                console.log("error");
+                i--;
+                console.log(i);
+            }
+        
+        }
+    },
+    detectPersonalLevel: function() {
+        if (personalMovieDB.count <= 10) {
+            console.log("Просмотрено довольно мало фильмов");
+        } else if (personalMovieDB.count > 10 && personalMovieDB.count < 30) {
+            console.log("Вы классический зритель");
+        } else {
+            console.log("Вы киноман!");
+        }
+        
+    },
+    toggleVisibleMyDB: function() {
+        if(personalMovieDB.privat) {
+            personalMovieDB.privat = false;
+        } else {
+            personalMovieDB.privat = true;
+        }
+    },
+    showMyDB: function(hidden) {
+        if (!hidden) {
+            console.log(personalMovieDB);
+        }
+    },
+    writeYourGenre: function() {
+        // for(let i = 1; i <= 3; i++) {
+        //     let genre = prompt(`Ваш любимый фильм под номером ${i}`, "");
+        //     if (genre === '' || genre === null){
+        //         console.log('Вы ввели некоретные данные');
+        //         i--;
+        //     } else {
+        //         personalMovieDB.genres[i - 1] = genre;
+        //     }
+        // }
+        for(let i = 1; i < 2; i++) {
+            let genres = prompt(`Введите ваши любимые жанры через запятую`, "").toLowerCase();
+            if (genres === '' || genres === null){
+                console.log('Вы ввели некоретные данные');
+                i--;
+            } else {
+                personalMovieDB.genres = genres.split(', ');
+                personalMovieDB.genres.sort();
+            }
+        }
+    personalMovieDB.genres.forEach((item, i) => {
+        console.log(`Дюбимый жанр ${i + 1} - это ${item}`);
+    });
+    }
+};
