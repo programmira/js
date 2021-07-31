@@ -1017,3 +1017,43 @@
 // console.log(typeof(Boolean('2')));
 
 // console.log(typeof(!!'2'));
+
+// Задачи с реальных собеседований
+// #1
+// let x = 5;
+// alert(x++);
+// #2
+// let y = [] + false - null + true;
+// console.log(y);
+
+// #3
+// let y = 1;
+// let x = y = 2;
+// alert(x);
+
+// #4
+// let x = [] + 1 + 2;
+// console.log(x);
+
+// #5
+// alert('1'[0]);
+
+// #6
+// let x = 2 && 1 && null && 0 && undefined;
+// console.log(x);
+
+// #7
+// alert(null || 2 && 3 || 4);
+
+// #8
+// let a = [1, 2, 3];
+// let b = [1, 2, 3];
+// if(a == b){
+//     console.log('Hello!');
+// } else {
+//     console.log("not");
+// }
+
+// #9
+
+alert(+"Infinity");
