@@ -1056,4 +1056,155 @@
 
 // #9
 
-alert(+"Infinity");
+// alert(+"Infinity");
+
+// Задачи на математические функции JavaScript
+// Работа с %
+// Задача №1
+// let a = 10;
+// let b = 3;
+// function del() {
+//     let c = a % b;
+//     console.log(c);
+// }
+// del();
+
+
+// Задача №2
+// let a = 10;
+// let b = 3;
+// let c = a % b;
+// if(c === 0) {
+//     console.log(`Делится ${a / b}`);
+// } else {
+//     console.log(`Делится с остатком ${c}`);
+// }
+
+// Работа со степенью и корнем
+// Задача №3
+
+// let st = Math.pow(2, 10);
+// console.log(st);
+
+// Задача №4
+// let a = Math.sqrt(245);
+// console.log(a);
+
+// Задача №5
+// let c = [4, 2, 5, 19, 13, 0, 10];
+// let b = 0;
+// for(let i = 0; i < c.length; i++) {
+//     b = Math.pow(c[i], 2) + b;
+// }
+// console.log(Math.sqrt(b));
+
+// Работа с функциями округления
+
+// Задача №6
+
+// console.log(Math.round(Math.sqrt(379)));
+
+// let num = Math.sqrt(379);
+// console.log(num.toFixed(2));
+
+// let num = Math.sqrt(379);
+// console.log(num.toFixed(1));
+
+// Задача №7
+// let c = {
+//     'floor': Math.floor(Math.sqrt(587)),
+//     'ceil': Math.ceil(Math.sqrt(587))
+// };
+// console.log(c);
+
+
+// Задача №8
+
+// console.log(Math.max(4, -2, 5, 19, -130, 0, 10));
+// console.log(Math.min(4, -2, 5, 19, -130, 0, 10));
+
+
+// Работа с рандомом
+
+// Задача №9
+
+// document.write(Math.round(Math.random() * 100));
+
+// Задача №10
+// let a = [];
+// for(let i = 0; i < 10; i++){
+//     a = Math.round(Math.random() * 10) + ',' +` ${a}`;
+// }
+// console.log(a);
+
+// let arr = [];
+// for (let i = 0; i < 10; i++) {
+// 	arr[i] = Math.floor(Math.random() * (100 - 1 + 1)) + 1;
+// }
+// alert(arr);
+
+
+// Работа с модулем
+// Задача №11
+// let a = -3;
+// let b = 1;
+// console.log(Math.abs(a-b));
+
+// Задача №12
+// let a = 3;
+// let b = 5;
+// let c = Math.abs(a - b);
+// console.log(c);
+
+// let a = 6;
+// let b = 1;
+// let c = Math.abs(a - b);
+// console.log(c);
+
+// Задачи
+// Задача №13
+// let arr = [12, 15, 20, 25, 59, 79];
+// let b = 0;
+// for(let i = 0; i < arr.length; i++){
+//     b = arr[i] + b;
+// }
+// console.log(b / arr.length);
+
+// Задача №14
+// let num = 4;
+//     for(let i = num - 1; i > 0; i--){
+//          num *= i;
+//      } 
+//    console.log(num);
+
+// Получение элементов со страницы
+
+// const box = window.document.getElementById("box");
+// console.log(box);
+
+// const btns = document.getElementsByTagName('button');
+// console.log(btns[0]);
+
+// const oneHeart = document.querySelector('div');
+// console.log(oneHeart);
+
+// Действия с элементами на странице
+
+// box[2].style.borderRadius = '30%';
+// box.button.style.cssText = 'background-color: blue, width: 500px';
+
+
+const div = document.createElement('div');
+const box = document.getElementsByClassName('box'),
+    btns = document.getElementsByTagName('button');
+div.classList.add('red');
+document.body.append(div);
+// document.querySelector('.box').prepend(div);
+// document.querySelector('.box').append(div);
+
+// document.box.button[1].before(div);
+// btns[3].after(div);
+// btns.insertBefore(div, btns[3]);
+
+// div.innerHTML = '<h1>Hello Vlad! How are you doing?</h1>';
+div.getContent = 'Hello';
