@@ -1194,11 +1194,11 @@
 // box.button.style.cssText = 'background-color: blue, width: 500px';
 
 
-const div = document.createElement('div');
-const box = document.getElementsByClassName('box'),
-    btns = document.getElementsByTagName('button');
-div.classList.add('red');
-document.body.append(div);
+// const div = document.createElement('div');
+// const box = document.getElementsByClassName('box'),
+//     btns = document.getElementsByTagName('button');
+// div.classList.add('red');
+// document.body.append(div);
 // document.querySelector('.box').prepend(div);
 // document.querySelector('.box').append(div);
 
@@ -1207,4 +1207,134 @@ document.body.append(div);
 // btns.insertBefore(div, btns[3]);
 
 // div.innerHTML = '<h1>Hello Vlad! How are you doing?</h1>';
-div.getContent = 'Hello';
+// div.getContent = 'Hello';
+
+// Задачи на функции работы со строками в JavaScript
+
+
+// Задача №1
+
+// let a ='aaa@bbb@ccc';
+// let newA = a.replace(/@/g, '!');
+// console.log(newA);
+
+// Задача №2
+
+// let str = 'aaa bbb ccc';
+// alert(str.substr(4, 3));
+
+// let str = 'aaa bbb ccc';
+// alert(str.substring(4, 7));
+
+// let str = 'aaa bbb ccc';
+// alert(str.slice(4, 7));
+
+// Задача №3
+
+// let date = '2025-12-31';
+// let arr = date.split('-');
+
+// let newDate = arr[2] + '/' + arr[1] + '/' + arr[0];
+// console.log(newDate);
+
+// Работа с регистром символов
+
+// Задача №4
+// let str = 'js';
+// console.log(str.toUpperCase());
+
+// Задача №5
+// let str = 'JS';
+// console.log(str.toLowerCase());
+
+// Работа с length, substr, substring, slice. Работа с indexOf
+// Задача №6
+// let str = 'я учу javascript!';
+// console.log(str.length);
+
+// Задача №7
+// let str = 'я учу javascript!';
+// console.log(str.substr(2, 3));
+
+// Задача №7
+// let str = 'я учу javascript!';
+// console.log(str.substring(2, 5));
+
+
+// Задача №7
+// let str = 'я учу javascript!';
+// console.log(str.slice(2, 5));
+
+// Задача №8
+// let str = 'я учу javascript!';
+// console.log(str.indexOf('учу'));
+
+// Задача №9
+// let str = 'Показатели финансовых результатов характеризуют абсолютную эффективность хозяйствования предприятия.';
+// let n = 30;
+// let result;
+// if(str.length > n) {
+//     result = str.substr(0, n) + '...';
+// } else {
+//     result = str;
+// }
+// console.log(result);
+
+// Работа с replace
+// Задача №10
+// let str = 'Я-учу-javascript!';
+// let newStr = str.replace(/-/g, '!');
+// console.log(newStr);
+
+// Работа с split
+// Задача №11
+// let str =  'я учу javascript!';
+// let newStr = str.split(' ');
+// console.log(newStr);
+
+// Задача №12
+// let str =  'я учу javascript!';
+// let newStr = str.split('');
+// console.log(newStr);
+
+// Задача №13
+// let date = '2025-12-31';
+// let newDate = date.split('-');
+// let updatedDate = newDate[2] + '.' + newDate[1] + '.' + newDate[0];
+// console.log(updatedDate);
+
+// Работа с join
+
+// Задача №14
+// let arr = ['я', 'учу', 'javascript', '!'];
+// let newArr = arr.join('+');
+// console.log(newArr);
+
+// Задачи
+// Задача №15
+// let str = 'camel';
+// console.log(str[0].toUpperCase()+ str[1] + str[2] + str[3] + str[4]);
+
+// Задача №16
+// let str = 'Показатели финансовых результатов характеризуют абсолютную эффективность хозяйствования предприятия.';
+// let newStr = str.split(' ');
+// let result = ' ';
+// for(let i = 0; i < newStr.length; i++) {
+//     let n = newStr[i].length;
+//     let str1 = newStr[i][0].toUpperCase() + newStr[i].slice(1, n) + ' ';
+//     result = result + str1;
+
+// }
+// console.log(result);
+
+// Задача №17
+// let str = 'var_test_text_ala_vlad';
+// let str1 = str.split('_');
+// let result = '';
+// for(let i = 0; i < str1.length; i++) {
+//     let n = str1[i].length;
+//     let str2 = str1[i][0].toUpperCase() + str1[i].slice(1, n);
+//     result = result + str2;
+// }
+
+// console.log(result);
