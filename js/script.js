@@ -1338,3 +1338,97 @@
 // }
 
 // console.log(result);
+
+// 30. Практика. Задание на отработку действий со страницей
+
+// Задачи на функции работы с массивами в JavaScript
+
+// Задача №1
+
+// let arrA =  ['a', 'b', 'c'];
+// let arrB = [1, 2, 3];
+// let c = arrA.concat(arrB);
+// console.log(c);
+
+// Задача №2
+// let arr = ['a', 'b', 'c'];
+// arr.push(1, 2, 3);
+// console.log(arr);
+
+// Задача №3
+// let arrA = [1, 2, 3];
+// let arrB = [4, 5, 6];
+// let arrC = arrA.concat(arrB);
+// console.log(arrC);
+
+// Задача №4
+
+// let arr = [1, 2, 3];
+// let newArr = arr.reverse();
+// console.log(newArr);
+
+// Задача №5
+// let arr = [1, 2, 3];
+// arr.push(4, 5, 6);
+// console.log(arr);
+
+// Задача №6
+// let arr = [1, 2, 3];
+// arr.unshift(4, 5, 6);
+// console.log(arr);
+
+
+// Задача №7
+// let arr = ['js', 'css', 'jq'];
+// let elem = arr.shift();
+// console.log(elem);
+
+// Задача №8
+// let arr = ['js', 'css', 'jq'];
+// let elem = arr.pop();
+// console.log(elem);
+
+// Задача №9
+
+// let arr =  [1, 2, 3, 4, 5];
+// let newArr = arr.slice(0, 3);
+// console.log(newArr);
+
+
+// Задача №10
+// let arr =  [1, 2, 3, 4, 5];
+// let newArr = arr.slice(3, 5);
+// console.log(newArr);
+
+// Задача №11
+// let arr =  [1, 2, 3, 4, 5];
+// let newArr = arr.splice(1, 3);
+// console.log(newArr);
+
+// Задача №12
+// let arr =  [1, 2, 3, 4, 5];
+// arr.splice(1, 2);
+// console.log(arr);
+
+// Задача №13
+// let arr = [1, 2, 3, 4, 5];
+// arr.splice(3, 0,  'a', 'b', 'c')
+// console.log(arr);
+
+// Задача №14
+// let arr = [1, 2, 3, 4, 5];
+// arr.splice(1, 0, 'a', 'b');
+// arr.splice(6, 0, 'c');
+// arr.splice(8, 0, 'e');
+// console.log(arr);
+
+
+// Задача №15
+// let arr = [3, 4, 1, 2, 7];
+// arr.sort();
+// console.log(arr);
+
+// Задача №16
+// let arr = {js:'test', jq: 'hello', css: 'world'};
+
+// console.log(Object.keys(arr));
