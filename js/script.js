@@ -1464,11 +1464,56 @@
 //     console.log("Opps, error");
 // }
 
+// Задача №4
+// let str = '.html';
+// let name1 = 'maindoc.html';
+// if(name1.substr(-5) === str) {
+//     console.log('True');
+// } else {
+//     console.log('False');
+// }
+
+// Задачи на основы работы с пользовательскими функциями в JavaScript
+
+// Задача №1
+// function squareNumber($num) {
+//     return $num * $num;
+// }
+// console.log(squareNumber(9));
+
+
+// Задача №2
+// function sumNumber(a, b) {
+//     return a + b;
+// }
+// console.log(sumNumber(4, 10));
+
 // Задача №3
-let str = '.html';
-let name1 = 'maindoc.html';
-if(name1.substr(-5) === str) {
-    console.log('True');
-} else {
-    console.log('False');
+
+// function operation(a, b, c) {
+//     return (a - b) / c;
+// }
+// console.log(operation(21, 2, 2));
+
+// Задача №4
+
+function dayOfWeek (a) {
+    if(a === 1) {
+        return 'Понедельник';
+    } else if( a === 2) {
+        return 'Вторник';
+    } else if( a === 3) {
+        return 'Среда';
+    } else if( a === 4) {
+        return 'Четверг';
+    } else if( a === 5) {
+        return 'Пятница';
+    } else if( a === 6) {
+        return 'Суббота';
+    } else if( a === 7) {
+        return 'Воскресенье';
+    } else {
+        return 'Введите число от 1 до 7';
+    }
 }
+console.log(dayOfWeek(3));
