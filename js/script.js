@@ -1432,3 +1432,43 @@
 // let arr = {js:'test', jq: 'hello', css: 'world'};
 
 // console.log(Object.keys(arr));
+
+// Отработка стандартных функций JavaScript
+// Задача №1
+
+// let a = 'показатели финансовых результатов характеризуют абсолютную эффективность хозяйствования предприятия.';
+
+// console.log(a[0][0].toUpperCase() + a.substr(0));
+
+// let a = 'показатели финансовых результатов характеризуют абсолютную эффективность хозяйствования предприятия.';
+// a = a.split('');
+// a[0] = a[0].toUpperCase();
+// let c = a.join('');
+// console.log(c);
+
+// Задача №2
+
+// let str = '123456';
+// let a = str.split('').reverse().join('');
+
+
+// console.log(a);
+
+// Задача №3
+// let str = 'http://';
+// let begin = 'http://fasom.com';
+// let con = begin.slice(0, 7);
+// if(con == str) {
+//     console.log('Right');
+// } else {
+//     console.log("Opps, error");
+// }
+
+// Задача №3
+let str = '.html';
+let name1 = 'maindoc.html';
+if(name1.substr(-5) === str) {
+    console.log('True');
+} else {
+    console.log('False');
+}
