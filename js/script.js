@@ -1497,23 +1497,65 @@
 
 // Задача №4
 
-function dayOfWeek (a) {
-    if(a === 1) {
-        return 'Понедельник';
-    } else if( a === 2) {
-        return 'Вторник';
-    } else if( a === 3) {
-        return 'Среда';
-    } else if( a === 4) {
-        return 'Четверг';
-    } else if( a === 5) {
-        return 'Пятница';
-    } else if( a === 6) {
-        return 'Суббота';
-    } else if( a === 7) {
-        return 'Воскресенье';
-    } else {
-        return 'Введите число от 1 до 7';
+// function dayOfWeek (a) {
+//     if(a === 1) {
+//         return 'Понедельник';
+//     } else if( a === 2) {
+//         return 'Вторник';
+//     } else if( a === 3) {
+//         return 'Среда';
+//     } else if( a === 4) {
+//         return 'Четверг';
+//     } else if( a === 5) {
+//         return 'Пятница';
+//     } else if( a === 6) {
+//         return 'Суббота';
+//     } else if( a === 7) {
+//         return 'Воскресенье';
+//     } else {
+//         return 'Введите число от 1 до 7';
+//     }
+// }
+// console.log(dayOfWeek(3));
+
+// Задачи на приемы работы с флагами на JavaScript
+
+// Задача №1
+// function findNum(arr) {
+//     for(let i = 0; i < arr.length; i++) {
+//         if(arr[i] === 5) {
+//             return 'Да';
+
+//         } 
+
+//     }
+// return 'Нет';
+// }
+// let arr = [5, 2, 3, 4, 0, 10, 1];
+// console.log(findNum(arr));
+
+// Задача №2
+// let num = 31;
+// let numCheck = 30;
+// let operation = num / numCheck;
+// function division(num) {
+//     for(let i = 0; i < num; i++) {
+//         if(Number.isInteger(operation)) {
+//             return true;
+//         }
+//     }
+//     return false;
+// }
+// console.log(division(num));
+
+// Задача №3
+let arr = [1, 2, 3, 0, 4, 10];
+function findTwoSimilar(arr) {
+    for(let i = 0; i < arr.length; i++) {
+        if(arr[i] === arr[++i]) {
+            return 'Да';
+        }
     }
+    return 'Нет';
 }
-console.log(dayOfWeek(3));
+console.log(findTwoSimilar(arr));
