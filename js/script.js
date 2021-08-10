@@ -1549,13 +1549,46 @@
 // console.log(division(num));
 
 // Задача №3
-let arr = [1, 2, 3, 0, 4, 10];
-function findTwoSimilar(arr) {
-    for(let i = 0; i < arr.length; i++) {
-        if(arr[i] === arr[++i]) {
-            return 'Да';
-        }
+// let arr = [1, 2, 3, 0, 4, 10];
+// function findTwoSimilar(arr) {
+//     for(let i = 0; i < arr.length; i++) {
+//         if(arr[i] === arr[++i]) {
+//             return 'Да';
+//         }
+//     }
+//     return 'Нет';
+// }
+// console.log(findTwoSimilar(arr));
+
+// Приемы работы с логическими значениями
+// Задача №1
+// function checkTwoNum(a, b){
+//     if(a === b) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+// console.log(checkTwoNum(7, 9));
+
+// Задача №2
+
+// function checkSumNum(a, b) {
+//     if((a + b) > 10){
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+// console.log(checkSumNum(4, 7));
+
+// Задача №3
+
+function checkNum(a) {
+    if(a <= 0) {
+        return true;
+    } else {
+        return false;
     }
-    return 'Нет';
 }
-console.log(findTwoSimilar(arr));
+console.log(checkNum(-9));
