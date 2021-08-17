@@ -1584,11 +1584,57 @@
 
 // Задача №3
 
-function checkNum(a) {
-    if(a <= 0) {
-        return true;
-    } else {
-        return false;
-    }
-}
-console.log(checkNum(-9));
+// function checkNum(a) {
+//     if(a <= 0) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+// console.log(checkNum(-11));
+
+// Задачи на приемы работы с циклами на JavaScript
+// Задача №1
+// let str = '';
+// for(let i = 1; i < 10; i++) {
+//     str += i;
+// }
+// console.log(str);
+
+// Задача №2
+// let str = '';
+// for(let i = 9; i > 0; i--) {
+//     str += i;
+// }
+// console.log(str);
+
+// Задача №3
+
+// let str = '-';
+// for(let i = 1; i < 10; i++) {
+//     str += i + '-';
+// }
+// console.log(str);
+
+// Задача №4
+// let str = '';
+// for(let i = 1; i < 21; i++) {
+//    str += 'x';
+//     console.log(str);
+// }
+
+// Задача №5
+
+// for(let i = 1; i < 10; i++) {
+//     let num = '';
+//     for(let j = 1; j <= i; j++) {
+//         num = num + i;
+//     }
+//     console.log(num);
+
+// Задача №6
+// let num = '';
+// for (let i = 0; i < 4; i++) {
+//     num = num + 'xx';
+//     console.log(num);
+//     }
